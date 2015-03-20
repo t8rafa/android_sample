@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="t8studio.com.br.worker.WorkerActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/lbl_section1"
+                android:id="@+id/textView_section1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_candidate_name"
+                android:id="@+id/textView_candidate_name"
+                android:layout_below="@id/textView_section1"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/editText_candidate_name"
+                android:layout_below="@id/textView_candidate_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/error_candidate_name"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_below="@id/editText_candidate_name"
+                android:layout_alignRight="@id/editText_candidate_name"
+                android:gravity="right"
+                android:visibility="invisible"
+                android:id="@+id/textView_candidate_name_error"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_candidate_email"
+                android:id="@+id/textView_candidate_email"
+                android:layout_below="@id/editText_candidate_name"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/editText_candidate_email"
+                android:layout_below="@id/textView_candidate_email"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/error_candidate_email"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_below="@id/editText_candidate_email"
+                android:layout_alignRight="@id/editText_candidate_email"
+                android:gravity="right"
+                android:visibility="invisible"
+                android:id="@+id/textView_candidate_email_error"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/lbl_section2"
+                android:id="@+id/textView_section2"
+                android:layout_marginTop="@dimen/section_vertical"
+                android:layout_below="@id/editText_candidate_email"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_skill_html"
+                android:id="@+id/textView_skill_html"
+                android:layout_below="@id/textView_section2"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:id="@+id/spinner_skill_html"
+                android:layout_below="@id/textView_section2"
+                android:layout_toRightOf="@id/textView_skill_html"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_skill_css"
+                android:id="@+id/textView_skill_css"
+                android:layout_below="@id/spinner_skill_html"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:id="@+id/spinner_skill_css"
+                android:focusable="true"
+                android:layout_below="@id/spinner_skill_html"
+                android:layout_toRightOf="@id/textView_skill_css" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_skill_javascript"
+                android:id="@+id/textView_skill_js"
+                android:layout_below="@id/spinner_skill_css"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:id="@+id/spinner_skill_js"
+                android:focusable="true"
+                android:layout_below="@id/spinner_skill_css"
+                android:layout_toRightOf="@id/textView_skill_js" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_skill_python"
+                android:id="@+id/textView_skill_python"
+                android:layout_below="@id/spinner_skill_js"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:id="@+id/spinner_skill_python"
+                android:focusable="true"
+                android:layout_below="@id/spinner_skill_js"
+                android:layout_toRightOf="@id/textView_skill_python" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_skill_django"
+                android:id="@+id/textView_skill_django"
+                android:layout_below="@id/spinner_skill_python" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:id="@+id/spinner_skill_django"
+                android:focusable="true"
+                android:layout_below="@id/spinner_skill_python"
+                android:layout_toRightOf="@id/textView_skill_django"  />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_skill_ios"
+                android:id="@+id/textView_skill_ios"
+                android:layout_below="@id/spinner_skill_django" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:id="@+id/spinner_skill_ios"
+                android:focusable="true"
+                android:layout_below="@id/spinner_skill_django"
+                android:layout_toRightOf="@id/textView_skill_ios" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lbl_skill_android"
+                android:id="@+id/textView_skill_android"
+                android:layout_below="@id/spinner_skill_ios" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_group_vertical"
+                android:layout_marginBottom="@dimen/field_vertical"
+                android:id="@+id/spinner_skill_android"
+                android:focusable="true"
+                android:layout_below="@id/spinner_skill_ios"
+                android:layout_toRightOf="@id/textView_skill_android" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

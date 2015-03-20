@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Worker</string>
+    <string name="header_image">Imagem de fundo</string>
+    <string name="header_title">Aplicativo de exemplo</string>
+    <string name="header_text">Preencha as informações a seguir para se candidatar as vagas de desenvolvedor</string>
+    <string name="btn_start">Iniciar</string>
+    <string name="title_activity_worker">Cadastro</string>
+    <string name="lbl_section1">Dados do candidato</string>
+    <string name="lbl_candidate_name">Nome</string>
+    <string name="lbl_candidate_email">Email</string>
+    <string name="lbl_section2">Avalie suas habilidades</string>
+    <string name="lbl_skill_html">HTML</string>
+    <string name="lbl_skill_css">CSS</string>
+    <string name="lbl_skill_javascript">JavaScript</string>
+    <string name="lbl_skill_python">Python</string>
+    <string name="lbl_skill_django">Django</string>
+    <string name="lbl_skill_ios">iOS</string>
+    <string name="lbl_skill_android">Android</string>
+
+
+    <string name="error_candidate_name">É necessário informar seu nome</string>
+    <string name="error_candidate_email">Seu email não parece válido</string>
+
+    <string name="error_connection">Não foi possível connectar. Verifique sua conexão com a internet.</string>
+    <string name="error_server">Parece que o servidor está meio ocupado. Tente novamente dentro de alguns instantes.</string>
+
+    <string name="ic_action_save">Salvar</string>
+    <string name="success_registration">Seu cadastro foi concluído com sucesso!</string>
+
+</resources>
